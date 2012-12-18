@@ -46,6 +46,18 @@
         <url>http://blog.gurkensalat.com/</url>
     </organization>
 
+    <developers>
+        <developer>
+            <id>hakan</id>
+            <name>Hakan</name>
+            <email>hakan@gurkensalat.com</email>
+            <roles>
+                <role>everything</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>		
+    </developers>
+
     <licenses>
         <license>
             <name>Apache 2.0</name>
