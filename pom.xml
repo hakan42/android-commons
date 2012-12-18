@@ -203,6 +203,14 @@
                         <version>1.0</version>
                     </dependency>
                 </dependencies>
+                <executions>
+                    <execution>
+                        <id>attach-descriptor</id>
+                        <goals>
+                            <goal>attach-descriptor</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
