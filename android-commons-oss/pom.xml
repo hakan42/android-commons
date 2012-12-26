@@ -238,7 +238,8 @@
                         </goals>
                         <configuration>
                             <name>manifest.version.code</name>
-                            <pattern>yyyyMMDDHHmm</pattern>
+                            <pattern>yyyyMMddHHmm</pattern>
+                            <offset>1</offset>
                         </configuration>
                     </execution>
                 </executions>
