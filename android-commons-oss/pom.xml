@@ -20,6 +20,10 @@
     <url>http://hakan42.github.com/android-commons/</url>
     <description />
 
+    <modules>
+        <module>../android-commons-account-sync</module>
+    </modules>
+
     <properties>
         <platform.version>4.0.1.2</platform.version>
 
