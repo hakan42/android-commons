@@ -14,7 +14,6 @@
 
     <modules>
         <module>android-commons-oss</module>
-        <module>locale-api</module>
     </modules>
 
     <properties>
