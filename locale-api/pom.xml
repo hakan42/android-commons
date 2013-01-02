@@ -4,20 +4,19 @@
 
     <groupId>com.twofortyfouram.locale</groupId>
     <artifactId>locale-api</artifactId>
-    <version>0.16.GS-SNAPSHOT</version>
+    <version>0.17.GS-SNAPSHOT</version>
     <packaging>apklib</packaging>
     <name>locale-api</name>
 
-	<!--
+    <!--
     <inceptionYear>2012</inceptionYear>
     <url>http://hakan42.github.com/android-commons/</url>
     <description />
-	-->
+    -->
 
     <properties>
         <platform.version>4.0.1.2</platform.version>
-        <platform.sdk.version>16</platform.sdk.version>
-		<!-- TODO: Replace by 17 after updating SDK -->
+        <platform.sdk.version>17</platform.sdk.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.source.version>1.6</java.source.version>
@@ -50,7 +49,7 @@
 	</dependency>
     </dependencies>
 
-	<build>
+    <build>
         <pluginManagement>
             <plugins>
                 <plugin>
