@@ -121,7 +121,7 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>3.5.1-SNAPSHOT</version>
                 </plugin>
 
                 <plugin>
@@ -224,7 +224,22 @@
                 <extensions>true</extensions>
                 <configuration>
                     <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
+                    <lint>
+                        <failOnError>false</failOnError>
+                        <skip>false</skip>
+                        <enableHtml>true</enableHtml>
+                        <enableXml>true</enableXml>
+                    </lint>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>lint</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>lint</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
