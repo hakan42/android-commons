@@ -156,7 +156,17 @@
                 <plugin>
                     <artifactId>maven-jarsigner-plugin</artifactId>
                     <version>1.2</version>
-                    <inherited>true</inherited>
+                    <executions>
+                        <execution>
+                            <id>signing</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>sign</goal>
+                                <goal>verify</goal>
+                            </goals>
+                            <inherited>true</inherited>
+                        </execution>
+                    </executions>
                     <configuration>
                         <removeExistingSignatures>true</removeExistingSignatures>
                         <archiveDirectory />
@@ -230,6 +240,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
+                    <sign>
+                        <debug>false</debug>
+                    </sign>
                     <lint>
                         <failOnError>false</failOnError>
                         <skip>false</skip>
