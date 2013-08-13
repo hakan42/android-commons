@@ -46,7 +46,7 @@
             <dependency>
                 <groupId>de.akquinet.android.androlog</groupId>
                 <artifactId>androlog</artifactId>
-                <version>1.0.5</version>
+                <version>1.0.6</version>
             </dependency>
 
             <!-- For OAuth handling -->
@@ -72,7 +72,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.10</version>
+                <version>4.11</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
