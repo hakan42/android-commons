@@ -229,37 +229,39 @@
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>2.7</version>
                 </plugin>
+
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
+                        <sign>
+                            <debug>false</debug>
+                        </sign>
+                        <lint>
+                            <failOnError>false</failOnError>
+                            <skip>false</skip>
+                            <enableHtml>true</enableHtml>
+                            <enableXml>true</enableXml>
+                        </lint>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>lint</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>lint</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
             </plugins>
 
         </pluginManagement>
 
         <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
-                    <sign>
-                        <debug>false</debug>
-                    </sign>
-                    <lint>
-                        <failOnError>false</failOnError>
-                        <skip>false</skip>
-                        <enableHtml>true</enableHtml>
-                        <enableXml>true</enableXml>
-                    </lint>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>lint</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>lint</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
