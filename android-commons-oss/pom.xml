@@ -125,9 +125,6 @@
             <plugins>
 
                 <plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>android-maven-plugin</artifactId>
-                    <version>3.6.1</version>
                 </plugin>
 
                 <plugin>
@@ -233,6 +230,7 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
+                    <version>3.6.1</version>
                     <extensions>true</extensions>
                     <configuration>
                         <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
