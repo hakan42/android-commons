@@ -21,9 +21,11 @@
     </modules>
 
     <properties>
-        <platform.version>4.1.1.4</platform.version>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <platform.version>4.1.1.4</platform.version>
+        <android-maven-plugin.version>3.7.0</android-maven-plugin.version>
+
         <java.source.version>1.6</java.source.version>
         <java.target.version>1.6</java.target.version>
 
