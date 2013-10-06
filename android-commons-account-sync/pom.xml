@@ -24,6 +24,7 @@
     <description />
 
     <properties>
+        <signpost.version>1.2.1.2</signpost.version>
     </properties>
 
     <dependencyManagement>
@@ -45,20 +46,20 @@
             <dependency>
                 <groupId>de.akquinet.android.androlog</groupId>
                 <artifactId>androlog</artifactId>
-                <version>1.0.6</version>
+                <version>${androlog.version}</version>
             </dependency>
 
             <!-- For OAuth handling -->
             <dependency>
                 <groupId>oauth.signpost</groupId>
                 <artifactId>signpost-core</artifactId>
-                <version>1.2.1.2</version>
+                <version>${signpost.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>oauth.signpost</groupId>
                 <artifactId>signpost-commonshttp4</artifactId>
-                <version>1.2.1.2</version>
+                <version>${signpost.version}</version>
             </dependency>
 
             <dependency>
@@ -71,7 +72,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.11</version>
+                <version>${junit.version}</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
