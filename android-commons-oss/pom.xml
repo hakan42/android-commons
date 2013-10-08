@@ -42,7 +42,7 @@
 
         <junit.version>4.11</junit.version>
 
-        <androlog.version>1.0.5</androlog.version>
+        <androlog.version>1.0.6</androlog.version>
         <proguard.version>4.10</proguard.version>
 
         <android-maven-plugin.version>3.7.0</android-maven-plugin.version>
