@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-    xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- DOES NOT INHERIT FROM OUR OWN POM -->
@@ -15,7 +11,7 @@
 
     <groupId>com.gurkensalat.android.commons</groupId>
     <artifactId>android-commons-oss</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
     <name>android-commons-oss</name>
 
@@ -65,7 +61,8 @@
         <url>https://github.com/hakan42/android-commons</url>
         <connection>scm:git:https://github.com/hakan42/android-commons.git</connection>
         <developerConnection>scm:git:https://github.com/hakan42/android-commons.git</developerConnection>
-    </scm>
+      <tag>0.1.0</tag>
+  </scm>
 
     <issueManagement>
         <system>Git</system>
