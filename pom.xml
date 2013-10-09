@@ -120,7 +120,6 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
-                    <inherited>true</inherited>
                     <configuration>
                         <source>${java.source.version}</source>
                         <target>${java.target.version}</target>
@@ -143,7 +142,6 @@
                 <plugin>
                     <artifactId>maven-jarsigner-plugin</artifactId>
                     <version>1.2</version>
-                    <inherited>true</inherited>
                     <configuration>
                         <removeExistingSignatures>true</removeExistingSignatures>
                         <archiveDirectory />
