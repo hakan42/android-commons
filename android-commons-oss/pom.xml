@@ -326,7 +326,8 @@
                         </goals>
                         <configuration>
                             <name>manifest.version.code</name>
-                            <pattern>yyyyMMddHHmm</pattern>
+                            <!-- Two-digit years so version code will not overflow -->
+                            <pattern>yyMMddHHmm</pattern>
                             <offset>1</offset>
                         </configuration>
                     </execution>
