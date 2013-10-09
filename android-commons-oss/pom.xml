@@ -202,7 +202,7 @@
                         <removeExistingSignatures>true</removeExistingSignatures>
                         <archiveDirectory />
                         <archive>${project.build.directory}/${project.build.finalName}.${project.packaging}</archive>
-                        <verbose>true</verbose>
+                        <verbose>false</verbose>
                         <certs>true</certs>
                         <keystore>${sign.keystore}</keystore>
                         <alias>${sign.alias}</alias>
