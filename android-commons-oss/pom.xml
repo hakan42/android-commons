@@ -200,14 +200,18 @@
                     </executions>
                     <configuration>
                         <removeExistingSignatures>true</removeExistingSignatures>
-                        <archiveDirectory />
-                        <archive>${project.build.directory}/${project.build.finalName}.${project.packaging}</archive>
+                        <archiveDirectory>${project.build.directory}</archiveDirectory>
+                        <includes>
+                            <include>${project.build.directory}/*.${project.packaging}</include>
+                        </includes>
                         <verbose>false</verbose>
                         <certs>true</certs>
                         <keystore>${sign.keystore}</keystore>
                         <alias>${sign.alias}</alias>
                         <storepass>${sign.storepass}</storepass>
                         <keypass>${sign.keypass}</keypass>
+                        <argument>-sigalg</argument><argument>MD5withRSA</argument>
+                        <argument>-digestalg</argument><argument>SHA1</argument>
                     </configuration>
                 </plugin>
 
@@ -277,6 +281,15 @@
                             <enableHtml>true</enableHtml>
                             <enableXml>true</enableXml>
                         </lint>
+                        <proguard>
+                            <skip>false</skip>
+                        </proguard>
+                        <zipalign>
+                            <verbose>true</verbose>
+                            <skip>false</skip>
+                            <inputApk>${project.build.directory}/${project.artifactId}-${project.version}.apk</inputApk>
+                            <outputApk>${project.build.directory}/${project.artifactId}-${project.version}-signed-aligned.apk</outputApk>
+                        </zipalign>
                     </configuration>
                     <executions>
                         <execution>
@@ -284,6 +297,13 @@
                             <phase>verify</phase>
                             <goals>
                                 <goal>lint</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>zipalign-application-apk</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>zipalign</goal>
                             </goals>
                         </execution>
                     </executions>
