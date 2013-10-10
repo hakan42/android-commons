@@ -15,12 +15,20 @@
     <name>android-commons-account-sync</name>
 
     <inceptionYear>2012</inceptionYear>
-    <url>http://hakan42.github.com/android-commons-oss/</url>
+    <url>http://hakan42.github.io/android-commons-oss/</url>
     <description />
 
     <properties>
         <signpost.version>1.2.1.2</signpost.version>
     </properties>
+
+    <distributionManagement>
+        <site>
+            <id>github-pages-site</id>
+            <name>Deployment through GitHub's site deployment plugin</name>
+            <url>site/${project.version}</url>
+        </site>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>

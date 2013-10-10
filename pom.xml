@@ -17,7 +17,7 @@
 
     <!-- Repeat all configuration from parent since we inherit form oss-parent -->
     <inceptionYear>2012</inceptionYear>
-    <url>http://hakan42.github.com/android-commons-oss/</url>
+    <url>http://hakan42.github.io/android-commons-oss/</url>
     <description />
 
     <modules>
@@ -41,6 +41,8 @@
         <androlog.version>1.0.6</androlog.version>
         <proguard.version>4.10</proguard.version>
 
+
+        <doxia-module-markdown.version>1.4</doxia-module-markdown.version>
         <android-maven-plugin.version>3.7.0</android-maven-plugin.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
         <github-copy-maven-plugin.version>0.2.5</github-copy-maven-plugin.version>
@@ -361,9 +363,9 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>org.kohsuke</groupId>
+                        <groupId>org.apache.maven.doxia</groupId>
                         <artifactId>doxia-module-markdown</artifactId>
-                        <version>1.0</version>
+                        <version>${doxia-module-markdown.version}</version>
                     </dependency>
                 </dependencies>
                 <executions>
@@ -390,7 +392,8 @@
                         </goals>
                         <phase>site-deploy</phase>
                         <configuration>
-                            <path>${project.version}</path>
+                            <message>Creating site for ${project.artifactId}, ${project.version}</message>
+                            <path>${project.distributionManagement.site.url}</path>
                             <merge>true</merge>
                         </configuration>
                     </execution>
