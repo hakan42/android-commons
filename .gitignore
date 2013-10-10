@@ -13,6 +13,9 @@ target/
 bin/
 gen/
 
+# copied markdown files for site
+src/site/markdown/
+
 # Editor backup files
 *.bak
 *~
