@@ -17,7 +17,7 @@
 
     <!-- Repeat all configuration from parent since we inherit form oss-parent -->
     <inceptionYear>2012</inceptionYear>
-    <url>http://hakan42.github.com/android-commons/</url>
+    <url>http://hakan42.github.com/android-commons-oss/</url>
     <description />
 
     <modules>
@@ -58,9 +58,9 @@
     </properties>
 
     <scm>
-        <url>https://github.com/hakan42/android-commons</url>
-        <connection>scm:git:https://github.com/hakan42/android-commons.git</connection>
-        <developerConnection>scm:git:https://github.com/hakan42/android-commons.git</developerConnection>
+        <url>https://github.com/hakan42/android-commons-oss</url>
+        <connection>scm:git:https://github.com/hakan42/android-commons-oss.git</connection>
+        <developerConnection>scm:git:https://github.com/hakan42/android-commons-oss.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
 

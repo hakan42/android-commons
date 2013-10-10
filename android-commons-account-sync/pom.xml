@@ -6,7 +6,6 @@
         <groupId>com.gurkensalat.android.commons</groupId>
         <artifactId>android-commons-oss</artifactId>
         <version>0.2.0-SNAPSHOT</version>
-        <relativePath>../android-commons-oss</relativePath>
     </parent>
 
     <groupId>com.gurkensalat.android.commons</groupId>
@@ -16,7 +15,7 @@
     <name>android-commons-account-sync</name>
 
     <inceptionYear>2012</inceptionYear>
-    <url>http://hakan42.github.com/android-commons/</url>
+    <url>http://hakan42.github.com/android-commons-oss/</url>
     <description />
 
     <properties>
