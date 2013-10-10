@@ -17,7 +17,7 @@
             <sideBarEnabled>true</sideBarEnabled>
             <googlePlusOne />
             <gitHub>
-                <projectId>hakan42/android-commons</projectId>
+                <projectId>hakan42/android-commons-oss</projectId>
                 <ribbonOrientation>right</ribbonOrientation>
                 <ribbonColor>gray</ribbonColor>
             </gitHub>
@@ -29,7 +29,8 @@
     </custom>
 
     <body>
-        <menu name="Regular Site">
+        <menu name="Overview">
+            <item name="Github Page" href="${project.url}/../../.." />
         </menu>
 
         <menu ref="reports" />

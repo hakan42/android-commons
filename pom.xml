@@ -13,12 +13,12 @@
     <artifactId>android-commons-oss</artifactId>
     <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>android-commons-oss</name>
 
-    <!-- Repeat all configuration from parent since we inherit form oss-parent -->
-    <inceptionYear>2012</inceptionYear>
-    <url>http://hakan42.github.io/android-commons-oss/</url>
+    <name>android-commons-oss</name>
     <description />
+
+    <inceptionYear>2012</inceptionYear>
+    <url>https://hakan42.github.io/android-commons-oss/</url>
 
     <modules>
         <module>android-commons-account-sync</module>
@@ -67,8 +67,8 @@
   </scm>
 
     <issueManagement>
-        <system>Git</system>
-        <url>https://github.com/hakan42/android-commons/issues</url>
+        <system>Github</system>
+        <url>https://github.com/hakan42/android-commons-oss/issues</url>
     </issueManagement>
 
     <ciManagement>
