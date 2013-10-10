@@ -1,4 +1,4 @@
-android-commons
-===============
+android-commons-oss
+===================
 
-Common code for my Android projects
+Common poms and code for my Android projects
