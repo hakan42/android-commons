@@ -21,7 +21,7 @@
     <description />
 
     <modules>
-        <module>../android-commons-account-sync</module>
+        <module>android-commons-account-sync</module>
     </modules>
 
     <properties>
