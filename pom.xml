@@ -354,34 +354,27 @@
                             </resources>
                         </configuration>
                     </execution>
-                </executions>
-            </plugin>
-
-<!--
-            <plugin>
-                <groupId>com.github.goldin</groupId>
-                <artifactId>copy-maven-plugin</artifactId>
-                <configuration>
-                    <failIfNotFound>false</failIfNotFound>
-                    <resources>
-                        <resource>
-                            <targetPath>${project.basedir}/src/site/markdown</targetPath>
-                            <file>${project.basedir}/CONTRIBUTING.md</file>
-                            <destFileName>contributing.md.vm</destFileName>
-                        </resource>
-                    </resources>
-                </configuration>
-                <executions>
                     <execution>
-                        <id>copy-md-files</id>
+                        <id>copy-markdown-files</id>
                         <phase>pre-site</phase>
                         <goals>
-                            <goal>copy</goal>
+                            <goal>copy-resources</goal>
                         </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/src/site/markdown</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>.</directory>
+                                    <includes>
+                                        <includes>*.md</includes>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
--->
 
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
