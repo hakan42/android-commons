@@ -81,12 +81,4 @@
 
     </build>
 
-    <reporting>
-        <plugins>
-        </plugins>
-    </reporting>
-
-    <profiles>
-    </profiles>
-
 </project>
