@@ -38,10 +38,12 @@
 
         <junit.version>4.11</junit.version>
 
+        <!-- Libraries -->
+        <androidannotations.version>2.7.1</androidannotations.version>
         <androlog.version>1.0.6</androlog.version>
         <proguard.version>4.10</proguard.version>
 
-
+        <!-- Maven Plugins -->
         <doxia-module-markdown.version>1.4</doxia-module-markdown.version>
         <android-maven-plugin.version>3.7.0</android-maven-plugin.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
@@ -129,6 +131,20 @@
                 <groupId>de.akquinet.android.androlog</groupId>
                 <artifactId>androlog</artifactId>
                 <version>${androlog.version}</version>
+            </dependency>
+
+            <!-- Annotations to make code more readable -->
+            <dependency>
+                <groupId>com.googlecode.androidannotations</groupId>
+                <artifactId>androidannotations</artifactId>
+                <version>${androidannotations.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.googlecode.androidannotations</groupId>
+                <artifactId>androidannotations-api</artifactId>
+                <version>${androidannotations.version}</version>
             </dependency>
 
             <!-- Testing... -->
