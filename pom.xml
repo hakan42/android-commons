@@ -276,7 +276,7 @@
                     <configuration>
                         <predefinedSortOrder>custom_1</predefinedSortOrder>
                         <encoding>${project.build.sourceEncoding}</encoding>
-                        <sortProperties>true</sortProperties>
+                        <sortProperties>false</sortProperties>
                         <keepBlankLines>true</keepBlankLines>
                         <sortDependencies>scope</sortDependencies>
                         <lineSeparator>\n</lineSeparator>
