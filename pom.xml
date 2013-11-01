@@ -152,38 +152,6 @@
                 </plugin>
 
                 <plugin>
-                    <artifactId>maven-jarsigner-plugin</artifactId>
-                    <version>${maven-jarsigner-plugin.version}</version>
-                    <configuration>
-                        <removeExistingSignatures>true</removeExistingSignatures>
-                        <archiveDirectory>${project.build.directory}</archiveDirectory>
-                        <includes>
-                            <include>${project.build.directory}/*.${project.packaging}</include>
-                        </includes>
-                        <verbose>false</verbose>
-                        <certs>true</certs>
-                        <keystore>${sign.keystore}</keystore>
-                        <alias>${sign.alias}</alias>
-                        <storepass>${sign.storepass}</storepass>
-                        <keypass>${sign.keypass}</keypass>
-                        <argument>-sigalg</argument>
-                        <argument>MD5withRSA</argument>
-                        <argument>-digestalg</argument>
-                        <argument>SHA1</argument>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>signing</id>
-                            <goals>
-                                <goal>sign</goal>
-                                <goal>verify</goal>
-                            </goals>
-                            <phase>prepare-package</phase>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <plugin>
                     <groupId>com.github.wvengen</groupId>
                     <artifactId>proguard-maven-plugin</artifactId>
                     <version>${proguard-maven-plugin.version}</version>
@@ -278,6 +246,38 @@
                 </plugin>
 
                 <plugin>
+                    <artifactId>maven-jarsigner-plugin</artifactId>
+                    <version>${maven-jarsigner-plugin.version}</version>
+                    <configuration>
+                        <removeExistingSignatures>true</removeExistingSignatures>
+                        <archiveDirectory>${project.build.directory}</archiveDirectory>
+                        <includes>
+                            <include>${project.build.directory}/*.${project.packaging}</include>
+                        </includes>
+                        <verbose>true</verbose>
+                        <certs>true</certs>
+                        <keystore>${sign.keystore}</keystore>
+                        <alias>${sign.alias}</alias>
+                        <storepass>${sign.storepass}</storepass>
+                        <keypass>${sign.keypass}</keypass>
+                        <argument>-sigalg</argument>
+                        <argument>MD5withRSA</argument>
+                        <argument>-digestalg</argument>
+                        <argument>SHA1</argument>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>signing</id>
+                            <goals>
+                                <goal>sign</goal>
+                                <goal>verify</goal>
+                            </goals>
+                            <phase>package</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>com.google.code.sortpom</groupId>
                     <artifactId>maven-sortpom-plugin</artifactId>
                     <version>${maven-sortpom-plugin.version}</version>
@@ -285,6 +285,7 @@
                         <predefinedSortOrder>custom_1</predefinedSortOrder>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <sortProperties>false</sortProperties>
+                        <sortPlugins>false</sortPlugins>
                         <keepBlankLines>true</keepBlankLines>
                         <sortDependencies>scope</sortDependencies>
                         <lineSeparator>\n</lineSeparator>
