@@ -15,6 +15,7 @@ gen/
 
 # copied markdown files for site
 src/site/markdown/
+*/src/site/markdown/
 
 # Editor backup files
 *.bak
