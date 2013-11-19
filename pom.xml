@@ -213,6 +213,7 @@
                     <extensions>true</extensions>
                     <configuration>
                         <androidManifestFile>${project.build.directory}/filtered-manifest/AndroidManifest.xml</androidManifestFile>
+                        <release>true</release>
                         <sign>
                             <debug>false</debug>
                         </sign>
