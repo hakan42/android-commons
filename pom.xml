@@ -282,32 +282,6 @@
                     </executions>
                 </plugin>
 
-                <plugin>
-                    <groupId>com.google.code.sortpom</groupId>
-                    <artifactId>maven-sortpom-plugin</artifactId>
-                    <version>${maven-sortpom-plugin.version}</version>
-                    <configuration>
-                        <predefinedSortOrder>custom_1</predefinedSortOrder>
-                        <encoding>${project.build.sourceEncoding}</encoding>
-                        <sortProperties>false</sortProperties>
-                        <sortPlugins>false</sortPlugins>
-                        <keepBlankLines>true</keepBlankLines>
-                        <sortDependencies>scope</sortDependencies>
-                        <lineSeparator>\n</lineSeparator>
-                        <nrOfIndentSpace>4</nrOfIndentSpace>
-                        <verifyFail>Warn</verifyFail>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>verify-pom</id>
-                            <goals>
-                                <goal>verify</goal>
-                            </goals>
-                            <phase>verify</phase>
-                        </execution>
-                    </executions>
-                </plugin>
-
             </plugins>
 
         </pluginManagement>
