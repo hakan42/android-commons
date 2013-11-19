@@ -259,7 +259,7 @@
                         <includes>
                             <include>${project.build.directory}/*.${project.packaging}</include>
                         </includes>
-                        <verbose>true</verbose>
+                        <verbose>false</verbose>
                         <certs>true</certs>
                         <keystore>${sign.keystore}</keystore>
                         <alias>${sign.alias}</alias>
