@@ -235,17 +235,17 @@
                     <executions>
                         <execution>
                             <id>lint</id>
+                            <phase>verify</phase>
                             <goals>
                                 <goal>lint</goal>
                             </goals>
-                            <phase>verify</phase>
                         </execution>
                         <execution>
                             <id>zipalign-application-apk</id>
+                            <phase>verify</phase>
                             <goals>
                                 <goal>zipalign</goal>
                             </goals>
-                            <phase>package</phase>
                         </execution>
                     </executions>
                 </plugin>
