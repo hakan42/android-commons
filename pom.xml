@@ -358,7 +358,7 @@
                 <!-- http://stackoverflow.com/a/19065241 -->
                 <configuration>
                     <target name="move-readme-file">
-                        <move file="src/site/markdown/README.md" toFile="src/site/markdown/index.md" />
+                        <move file="src/site/markdown/README.md" toFile="src/site/markdown/index.md" failonerror="false" />
                     </target>
                 </configuration>
                 <executions>
