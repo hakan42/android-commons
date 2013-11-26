@@ -37,7 +37,7 @@
         <java.target.version>1.6</java.target.version>
 
         <junit.version>4.11</junit.version>
-        <robotium.version>4.3</robotium.version>
+        <robotium.version>4.3.1</robotium.version>
 
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-changes-plugin.version>2.9</maven-changes-plugin.version>
