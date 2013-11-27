@@ -24,7 +24,7 @@
     <properties>
 
         <android-maven-plugin.version>3.8.0</android-maven-plugin.version>
-        <androidannotations.version>2.7.1</androidannotations.version>
+        <androidannotations.version>3.0-SNAPSHOT</androidannotations.version>
         <androlog.version>1.0.6</androlog.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
         <doxia-module-markdown.version>1.4</doxia-module-markdown.version>
