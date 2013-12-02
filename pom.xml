@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- DOES NOT INHERIT FROM OUR OWN POM -->
@@ -25,7 +26,6 @@
 
         <android-maven-plugin.version>3.8.0</android-maven-plugin.version>
         <androidannotations.version>3.0-SNAPSHOT</androidannotations.version>
-        <androlog.version>1.0.6</androlog.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
         <doxia-module-markdown.version>1.4</doxia-module-markdown.version>
         <fluido-skin.version>1.3.0</fluido-skin.version>
@@ -39,6 +39,10 @@
         <junit.version>4.11</junit.version>
         <robotium.version>4.3.1</robotium.version>
         <mockito.version>1.9.5</mockito.version>
+
+        <androlog.version>1.0.6</androlog.version>
+        <logback-android.version>1.0.10-2</logback-android.version>
+        <slf4j.version>1.7.5</slf4j.version>
 
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-changes-plugin.version>2.9</maven-changes-plugin.version>
@@ -70,11 +74,31 @@
                 <version>${androlog.version}</version>
             </dependency>
 
+            <!-- logback for android is another logging and reporting library -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.tony19</groupId>
+                <artifactId>logback-android-core</artifactId>
+                <version>${logback-android.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.tony19</groupId>
+                <artifactId>logback-android-classic</artifactId>
+                <version>${logback-android.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.googlecode.androidannotations</groupId>
                 <artifactId>androidannotations-api</artifactId>
                 <version>${androidannotations.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.google.android</groupId>
                 <artifactId>android</artifactId>
@@ -532,8 +556,7 @@
                 <java.secure.socket.extension.classes>${java.home}/lib/jsse.jar</java.secure.socket.extension.classes>
             </properties>
         </profile>
-        <!-- mac profile has to be after unix since running on mac will trigger
-            both -->
+        <!-- mac profile has to be after unix since running on mac will trigger both -->
         <profile>
             <id>mac</id>
             <activation>
