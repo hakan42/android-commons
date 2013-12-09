@@ -44,6 +44,7 @@
         <logback-android.version>1.0.10-2</logback-android.version>
         <slf4j.version>1.7.5</slf4j.version>
 
+        <androidgendrawable-maven-plugin.version>1.0-SNAPSHOT</androidgendrawable-maven-plugin.version>
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-changes-plugin.version>2.9</maven-changes-plugin.version>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
@@ -214,6 +215,39 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>${build-helper-maven-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>fr.avianey.modjo</groupId>
+                    <artifactId>androidgendrawable-maven-plugin</artifactId>
+                    <version>${androidgendrawable-maven-plugin.version}</version>
+                    <configuration>
+                        <from>${project.basedir}/svg</from>
+                        <to>${project.basedir}/res</to>
+                        <rename>
+                            <name-of-svg-file>name-to-be-renamed-to</name-of-svg-file>
+                        </rename>
+                        <createMissingDirectories>true</createMissingDirectories>
+                        <targetedDensities>
+                            <density>ldpi</density>
+                            <density>mdpi</density>
+                            <density>hdpi</density>
+                            <density>xhdpi</density>
+                            <density>xxhdpi</density>
+                            <density>xxxhdpi</density>
+                        </targetedDensities>
+                        <fallbackDensity>mdpi</fallbackDensity>
+                        <skipNoDpi>true</skipNoDpi>
+                        <highResIcon>name-of-svg-file</highResIcon>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>gen</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                 </plugin>
 
                 <plugin>
