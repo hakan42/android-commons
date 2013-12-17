@@ -45,7 +45,7 @@
         <logback-android.version>1.0.10-2</logback-android.version>
         <slf4j.version>1.7.5</slf4j.version>
 
-        <androidgendrawable-maven-plugin.version>1.0-SNAPSHOT</androidgendrawable-maven-plugin.version>
+        <androidgendrawable-maven-plugin.version>1.0.0</androidgendrawable-maven-plugin.version>
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-changes-plugin.version>2.9</maven-changes-plugin.version>
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
@@ -235,6 +235,7 @@
                         <rename>
                             <name-of-svg-file>name-to-be-renamed-to</name-of-svg-file>
                         </rename>
+                        <override>ifModified</override>
                         <createMissingDirectories>true</createMissingDirectories>
                         <targetedDensities>
                             <density>ldpi</density>
