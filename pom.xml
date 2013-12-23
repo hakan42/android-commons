@@ -99,6 +99,7 @@
                 <groupId>org.androidannotations</groupId>
                 <artifactId>androidannotations-api</artifactId>
                 <version>${androidannotations.version}</version>
+                <scope>compile</scope>
             </dependency>
 
             <dependency>
