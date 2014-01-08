@@ -20,6 +20,7 @@
 
     <modules>
         <module>android-commons-account-sync</module>
+        <module>android-commons-account-sync-resources</module>
     </modules>
 
     <properties>
