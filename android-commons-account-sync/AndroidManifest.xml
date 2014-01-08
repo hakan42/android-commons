@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gurkensalat.android.accountsync"
+    android:versionCode="${manifest.version.code}"
+    android:versionName="${project.version}" >
+
+    <uses-sdk
+        android:minSdkVersion="${platform.min.sdk.version}"
+        android:targetSdkVersion="${platform.target.sdk.version}" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_label" >
+        <activity android:name="ACTIVITY_ENTRY_NAME" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
