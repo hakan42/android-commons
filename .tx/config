@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+minimum_perc = 80
+
+[android-commons-oss.android-commons-account-sync-strings]
+file_filter = android-commons-account-sync/res/values-<lang>/common-strings.xml
+source_file = android-commons-account-sync/res/values/common-strings.xml
+source_lang = en
+type = ANDROID
