@@ -28,6 +28,7 @@
         <android-maven-plugin.version>3.8.2</android-maven-plugin.version>
         <androidannotations.version>3.0</androidannotations.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
+        <buildnumber-maven-plugin.version>1.2</buildnumber-maven-plugin.version>
         <doxia-module-markdown.version>1.5</doxia-module-markdown.version>
         <fluido-skin.version>1.3.0</fluido-skin.version>
         <github-copy-maven-plugin.version>0.2.5</github-copy-maven-plugin.version>
@@ -52,6 +53,7 @@
         <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
         <maven-enforcer-plugin.version>1.3.1</maven-enforcer-plugin.version>
         <maven-jarsigner-plugin.version>1.3.1</maven-jarsigner-plugin.version>
+        <maven-jgit-buildnumber-plugin.version>1.2.7</maven-jgit-buildnumber-plugin.version>
         <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
         <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
         <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
@@ -221,6 +223,28 @@
                 </plugin>
 
                 <plugin>
+                    <groupId>ru.concerteza.buildnumber</groupId>
+                    <artifactId>maven-jgit-buildnumber-plugin</artifactId>
+                    <version>${maven-jgit-buildnumber-plugin.version}</version>
+                    <configuration>
+                        <branchProperty>buildnumber.branch</branchProperty>
+                        <buildnumberProperty>buildnumber.buildnumber</buildnumberProperty>
+                        <commitsCountProperty>buildnumber.commitsCount</commitsCountProperty>
+                        <revisionProperty>buildnumber.revision</revisionProperty>
+                        <tagProperty>buildnumber.tag</tagProperty>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>git-buildnumber</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>extract-buildnumber</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>${build-helper-maven-plugin.version}</version>
@@ -366,22 +390,8 @@
         <plugins>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>timestamp-property</id>
-                        <goals>
-                            <goal>timestamp-property</goal>
-                        </goals>
-                        <configuration>
-                            <name>manifest.version.code</name>
-                            <!-- Two-digit years so version code will not overflow -->
-                            <pattern>yyMMddHHmm</pattern>
-                            <offset>1</offset>
-                        </configuration>
-                    </execution>
-                </executions>
+                <groupId>ru.concerteza.buildnumber</groupId>
+                <artifactId>maven-jgit-buildnumber-plugin</artifactId>
             </plugin>
 
             <plugin>
