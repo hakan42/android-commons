@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.gurkensalat.android.commons</groupId>
+        <groupId>com.tandogan.android.commons</groupId>
         <artifactId>android-commons-account-sync</artifactId>
         <version>0.2.0-SNAPSHOT</version>
         <relativePath>../android-commons-account-sync/pom.xml</relativePath>

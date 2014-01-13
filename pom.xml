@@ -10,7 +10,7 @@
         <version>7</version>
     </parent>
 
-    <groupId>com.gurkensalat.android.commons</groupId>
+    <groupId>com.tandogan.android.commons</groupId>
     <artifactId>android-commons-oss</artifactId>
     <version>0.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -540,7 +540,7 @@
 
     <organization>
         <name>Gurkensalat</name>
-        <url>http://blog.gurkensalat.com/</url>
+        <url>http://blog.tandogan.com/</url>
     </organization>
 
     <licenses>
@@ -555,6 +555,7 @@
         <developer>
             <id>hakan</id>
             <name>Hakan</name>
+            <!-- TODO Switch email address to tandogan.com as soon as possible -->
             <email>hakan@gurkensalat.com</email>
             <roles>
                 <role>everything</role>
