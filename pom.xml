@@ -45,7 +45,7 @@
         <cupboard.version>1.0.4</cupboard.version>
 
         <androlog.version>1.0.6</androlog.version>
-        <logback-android.version>1.0.10-2</logback-android.version>
+        <logback-android.version>1.1.1-1</logback-android.version>
         <robolectric.version>2.2</robolectric.version>
         <slf4j.version>1.7.6</slf4j.version>
 
