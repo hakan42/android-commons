@@ -46,6 +46,7 @@
 
         <androlog.version>1.0.6</androlog.version>
         <logback-android.version>1.1.1-1</logback-android.version>
+        <logback-android-ui.version>1.0.1</logback-android-ui.version>
         <robolectric.version>2.2</robolectric.version>
         <slf4j.version>1.7.6</slf4j.version>
 
@@ -98,6 +99,12 @@
                 <groupId>com.github.tony19</groupId>
                 <artifactId>logback-android-classic</artifactId>
                 <version>${logback-android.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>edu.vanderbilt.isis</groupId>
+                <artifactId>lauilib</artifactId>
+                <version>${logback-android-ui.version}</version>
             </dependency>
 
             <dependency>
