@@ -42,7 +42,7 @@
         <robotium.version>5.1</robotium.version>
         <mockito.version>1.9.5</mockito.version>
         <commons-io.version>2.4</commons-io.version>
-        <cupboard.version>2.0.0</cupboard.version>
+        <cupboard.version>2.0.1</cupboard.version>
 
         <androlog.version>1.0.6</androlog.version>
         <logback-android.version>1.1.1-2</logback-android.version>
