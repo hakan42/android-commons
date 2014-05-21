@@ -47,7 +47,7 @@
         <androlog.version>1.0.6</androlog.version>
         <logback-android.version>1.1.1-2</logback-android.version>
         <logback-android-ui.version>1.0.1</logback-android-ui.version>
-        <robolectric.version>2.2</robolectric.version>
+        <robolectric.version>2.3</robolectric.version>
         <slf4j.version>1.7.7</slf4j.version>
 
         <androidgendrawable-maven-plugin.version>1.0.0</androidgendrawable-maven-plugin.version>
