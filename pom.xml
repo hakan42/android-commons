@@ -25,7 +25,7 @@
 
     <properties>
 
-        <android-maven-plugin.version>3.8.2</android-maven-plugin.version>
+        <android-maven-plugin.version>3.9.0-rc.2</android-maven-plugin.version>
         <androidannotations.version>3.0.1</androidannotations.version>
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.2</buildnumber-maven-plugin.version>
