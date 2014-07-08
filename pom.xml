@@ -39,7 +39,7 @@
         <java.target.version>1.6</java.target.version>
 
         <junit.version>4.11</junit.version>
-        <robotium.version>5.1</robotium.version>
+        <robotium.version>5.2.1</robotium.version>
         <mockito.version>1.9.5</mockito.version>
         <commons-io.version>2.4</commons-io.version>
         <cupboard.version>2.0.1</cupboard.version>
