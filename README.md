@@ -12,3 +12,7 @@ Status
 Maven site(s)
 =============
 * [SNAPSHOT](http://hakan42.github.io/android-commons-oss/site/0.2.0-SNAPSHOT/)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hakan42/android-commons-oss/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
